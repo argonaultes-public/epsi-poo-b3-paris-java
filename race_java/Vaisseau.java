@@ -40,4 +40,9 @@ public class Vaisseau {
         return 0;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%s (vitesse: %d, latence: %d)", this.name, this.vitesseMax, this.latence);
+    }
+
 }
