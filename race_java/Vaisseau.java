@@ -14,6 +14,11 @@ public class Vaisseau {
         this.latence = latence;
     }
 
+    public Vaisseau(String nom) {
+        this.nom = nom;
+        this.couleur = "inconnu";
+    }
+
     public int getDistance() {
         return this.distance;
     }

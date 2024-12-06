@@ -16,11 +16,15 @@ public class Course {
         vaisseaux.add(vaisseau);
     }
 
+    public Set<Vaisseau> run() {
+        return Set.copyOf(this.vaisseaux);
+    }
+
     @Override
     public String toString() {
         String result = "";
         for (Vaisseau vaisseau : this.vaisseaux) {
-            result += vaisseau + '\n';
+            result += String.format("> %s\n", vaisseau.toString());
         }
         return result;
     }
